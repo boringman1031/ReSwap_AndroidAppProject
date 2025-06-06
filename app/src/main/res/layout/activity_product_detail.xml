@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBeigeBg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 商品圖片 -->
+        <ImageView
+            android:id="@+id/ivDetailImage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_input_rounded"
+            android:contentDescription="商品圖片" />
+
+        <!-- 商品名稱 -->
+        <TextView
+            android:id="@+id/tvDetailName"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="商品名稱" />
+
+        <!-- 商品分類 -->
+        <TextView
+            android:id="@+id/tvDetailCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="分類"
+            android:textColor="@color/textLightGray"
+            android:layout_marginTop="4dp" />
+
+        <!-- 商品描述 -->
+        <TextView
+            android:id="@+id/tvDetailDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="描述"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <!-- 申請交換按鈕 -->
+        <Button
+            android:id="@+id/btnRequestExchange"
+            style="@style/RoundedButton"
+            android:text="📬 申請交換"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>

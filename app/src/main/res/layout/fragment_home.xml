@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBeigeBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 🔍 搜尋欄 -->
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="輸入商品名稱或描述"
+            android:iconifiedByDefault="false"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- 🎉 標語 -->
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="歡迎來到換換樂!!!"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <!-- 🔄 輪播圖片 -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- ⚪ 輪播指示點 -->
+        <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+            android:id="@+id/dots_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ➕ 我要上架按鈕 -->
+        <Button
+            android:id="@+id/btnGoAdd"
+            style="@style/RoundedButton"
+            android:text="➕ 我要上架"
+            android:layout_marginBottom="24dp" />
+
+        <!-- ❤️ 我的收藏按鈕 -->
+        <Button
+            android:id="@+id/btnGoFavorite"
+            style="@style/RoundedButton"
+            android:text="❤️ 我的收藏"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 交換紀錄按鈕 -->
+        <Button
+            android:id="@+id/btnGoRecords"
+            style="@style/RoundedButton"
+            android:text="📜 我的交換紀錄"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 🧾 分類商品 RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            tools:listitem="@layout/item_category_section"/>
+
+    </LinearLayout>
+</ScrollView>

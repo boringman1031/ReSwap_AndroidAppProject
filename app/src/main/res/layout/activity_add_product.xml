@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBeigeBg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 商品圖片預覽 -->
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_input_rounded" />
+
+        <!-- 選擇圖片按鈕 -->
+        <Button
+            android:id="@+id/btnSelectImage"
+            style="@style/RoundedButton"
+            android:text="選擇圖片" />
+
+        <!-- 商品名稱 -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="商品名稱"
+            android:background="@drawable/bg_input_rounded"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <!-- 商品分類 -->
+        <EditText
+            android:id="@+id/etCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="分類"
+            android:background="@drawable/bg_input_rounded"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <!-- 商品描述 -->
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="商品描述"
+            android:background="@drawable/bg_input_rounded"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:minLines="3"
+            android:layout_marginTop="12dp" />
+
+        <!-- 上架按鈕 -->
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/RoundedButton"
+            android:text="上架商品"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>

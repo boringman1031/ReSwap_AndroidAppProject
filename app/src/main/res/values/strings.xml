@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ReSwap</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="login">Login</string>
+    <string name="show_password">Show Password</string>
+    <string name="account">Account</string>
+    <string name="password">Password</string>
+</resources>

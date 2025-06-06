@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 補回 Android 預設模板所需的顏色 -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="black">#000000</color>
+
+    <!-- 主色（淡粉紅） -->
+    <color name="colorPrimary">#F9C5D1</color>
+    <color name="colorPrimaryDark">#F48FB1</color>
+    <color name="colorAccent">#FFE5EC</color>
+
+    <!-- 補充色 -->
+    <color name="colorButtonPink">#F48FB1</color>
+    <color name="colorBeigeBg">#e9d6c5</color>
+    <color name="colorBorderGray">#DDDDDD</color>
+    <color name="textLightGray">#666666</color>
+</resources>
